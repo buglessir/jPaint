@@ -11,7 +11,7 @@ let paper = document.getElementById('paper'),
   strokeSize = 2;
 
 ctx.fillStyle = 'white';
-ctx.fillRect(0, 0, w, w);
+ctx.fillRect(0, 0, w, h);
 
 paper.addEventListener('mousemove', (e) => {
   setPosition('move', e)
