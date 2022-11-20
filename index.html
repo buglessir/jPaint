@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>jPaint v1.0</title>
+</head>
+<body>
+  <main>
+    <section>
+      <canvas width="500" height="400" id="paper"></canvas>
+      <div class="menu">
+        <input type="color" onchange="setColor(this.value)">
+        Stroke: <input type="range" min="1" max="10" value="2" onchange="setStroke(this.value)">
+        <button onclick="save()">Save</button>
+        <button onclick="clearAll()">Clear</button>
+      </div>
+    </section>
+  </main>
+  <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
